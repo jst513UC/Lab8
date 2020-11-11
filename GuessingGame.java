@@ -16,7 +16,7 @@ GuessingGame()
 {
 
 Random r = new Random();
-randomNum = r.nextInt(101)+1;
+randomNum = r.nextInt(100)+1;
 
 JFrame frame = new JFrame ("Guessing Game");
 frame.setLayout(new FlowLayout());
@@ -64,7 +64,8 @@ public void actionPerformed(ActionEvent ae)
         jlabContents1.setText("Oof das too low.");
       }
 
-      else {
+      else 
+      {
          jlabContents1.setText("Ayyye you got it!");
       }
       }
